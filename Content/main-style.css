@@ -1,0 +1,746 @@
+/* start fonts */
+@font-face {
+  src: url("../webfonts/Cairo-Regular.ttf");
+  font-family: Cairo;
+}
+/* start fonts */
+
+/* start body style*/
+body {
+  height: 100%;
+  font-family: "Cairo", sans-serif;
+  line-height: 0;
+}
+/* start body style*/
+
+/* start navbar style*/
+
+.navbar {
+  padding: 0;
+}
+
+nav a.navbar-brand {
+  background-color: #e8dede;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  transition: all ease-out 0.5s;
+}
+
+nav a.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+nav a.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .navbar-toggler {
+  border-color: #0d0c11;
+}
+
+.navbar .navbar-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 900;
+  position: relative;
+  padding: 40px 15px;
+  color: #b4c18c;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link:focus::after,
+.navbar .navbar-nav .nav-link::after {
+  transition: all ease-in-out 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar .navbar-nav .active > .nav-link {
+  background-color: #b4c18c;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.dropdown-toggle::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 71px;
+  top: 40px;
+  border: 0;
+}
+
+.dropdown-menu {
+  right: 20px;
+  padding: 0;
+  background-color: rgba(107, 87, 87, 0.5);
+  min-width: 13rem;
+  border: 0;
+  border-top: 2px solid #fff;
+  border-radius: 0 0 5px 5px;
+  top: 76px;
+  line-height: 1.5;
+}
+
+.dropdown-menu::before {
+  display: inline-block;
+  position: absolute;
+  margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0;
+  top: -14px;
+  border-left: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid #fff;
+  border-right: 0.8rem solid transparent;
+  right: 10px;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+}
+
+.dropdown-item:hover {
+  padding-right: 1.9rem;
+}
+
+.dropdown-item:hover::after,
+footer ul li a:hover::after {
+  content: "\f100";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+}
+/* end navbar style  */
+
+/* start video style */
+.main-holder-video {
+  height: 100vh;
+}
+
+.main-holder-video .video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-holder-video .video-wrap video {
+  height: auto;
+  min-width: 100%;
+}
+
+.main-holder-video span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-aspect: 16/9) {
+  .home .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+/* end video style */
+
+/* start field section style */
+.field-section {
+  padding: 50px 0 80px 0;
+  background-color: #fff;
+}
+
+.field-section .arrows {
+  position: relative;
+  top: 350px;
+  left: 0;
+}
+
+.field-section .title {
+  color: #091746;
+}
+
+.field-section .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 0;
+  background-color: transparent;
+  border: 2px solid #001041;
+  opacity: 1;
+}
+
+.field-section .carousel-indicators {
+  bottom: -50px;
+  right: 45px;
+}
+
+.field-section .carousel-indicators .active {
+  background-color: #b4c18c;
+}
+/* end field section style */
+
+/* start last events style */
+.last-events {
+  padding: 60px;
+  direction: rtl;
+  background-image: url("../images_videos/job & category details bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.last-events .card {
+  transition: all ease-in-out 0.9s;
+}
+
+.last-events .card:hover {
+  box-shadow: 0px 10px 20px #161640;
+}
+
+.last-events .card p {
+  line-height: 1.5;
+}
+
+/* end last events style */
+
+/*  start contact style*/
+.contact {
+  padding: 50px 0;
+  padding-top: 150px;
+  line-height: 1.5;
+  background-image: url("../images_videos/home bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact h3 {
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+}
+.contact form {
+  direction: rtl;
+  margin-bottom: 3rem;
+}
+
+.contact form .form-control {
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-bottom: 2px solid #091746;
+  border-radius: 0;
+  padding: 1.5rem 0.5rem;
+}
+
+.contact form .custom-select {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #091746;
+}
+.contact .socail {
+  padding-right: 10rem;
+}
+
+.contact ul li a {
+  color: rgb(91, 2, 255);
+}
+
+.contact ul li a:hover {
+  text-decoration: none;
+}
+
+.contact ul li a:hover::after {
+  margin-left: 10px;
+}
+
+.contact ul li a.facebook:hover::after {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+  color: #3b5998;
+}
+
+.contact ul li a.linked:hover::after {
+  content: "\f0e1";
+  font-family: "Font Awesome 5 Brands";
+  color: #0077b5;
+}
+
+.contact ul li a.youtube:hover::after {
+  content: "\f167";
+  font-family: "Font Awesome 5 Brands";
+  color: #ff0000;
+}
+.contact button.btn-outline-info {
+  border-color: #091746;
+  border-radius: 0;
+}
+
+.contact button.btn-outline-info:hover {
+  background-color: #091746;
+}
+
+/* start our organization style*/
+.about-slider .carousel .carousel-item img {
+  height: 100vh;
+}
+
+.about-slider .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 0;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.about-slider .carousel-indicators .active {
+  background-color: #031242;
+}
+
+.about-section {
+  background-image: url("../images_videos/job & category details bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.5;
+  direction: rtl;
+  padding: 50px 0;
+}
+
+.about-section .title {
+  margin-bottom: 80px;
+  color: #af897a;
+}
+
+.about-section .title::after {
+  left: 0;
+  width: 50%;
+  right: 25%;
+}
+
+.about-section .nav-tabs {
+  border-bottom: 0;
+}
+
+.about-section .nav-tabs .nav-link {
+  border-radius: 0;
+  color: #031242;
+  padding: 0.5rem;
+  transition: border ease-in-out 0.5s;
+}
+
+.about-section .tab-content {
+  width: 50%;
+}
+
+.about-section .nav-tabs .nav-link:hover {
+  border: 1px solid #091746;
+}
+
+.about-section .nav-tabs .nav-link .about-section .tab-pane ul li {
+  padding: 10px 0;
+}
+
+.about-section .tab-pane ul li::before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+}
+/* end our organization style*/
+
+/* start founders section style */
+.founders-section {
+  line-height: 1.5;
+  padding: 50px 0 0 0;
+  direction: rtl;
+}
+
+.founders-section .title {
+  color: #091746;
+  margin-bottom: 100px;
+}
+
+.founders-section .founder,
+.founders-section .founder-bg {
+  padding: 30px 0;
+}
+
+.founders-section img {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  border: 2px solid #161640;
+}
+
+.founders-section .sub-heading {
+  color: #8a8585;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.founders-section p i {
+  color: #091746;
+}
+
+.founders-section p strong {
+  color: #af9191;
+}
+
+.founders-section .founder-bg {
+  background-image: url("../images_videos/job & category details bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* end  founder section style*/
+/*  end contact style*/
+
+/* start partners section style */
+.partners-section {
+  padding: 30px 0;
+  background-color: #fff;
+}
+/* start partners section style */
+
+/* start footer style*/
+footer {
+  padding: 40px 0;
+  background-color: #031242;
+  line-height: 1.5;
+}
+
+footer h3 {
+  color: #fff;
+  position: relative;
+}
+
+footer h3::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(4, 2, 2, 0.6);
+  width: 70%;
+  height: 2px;
+  right: 0;
+  top: 40px;
+  display: inline-block;
+}
+
+footer p {
+  direction: rtl;
+  text-align: justify;
+  margin: 0;
+  margin-top: 25px;
+  color: #af9191;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.contact ul li,
+footer ul li {
+  padding: 9px 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.contact ul li:hover,
+footer ul li:hover {
+  padding-right: 10px;
+}
+
+footer ul li a {
+  color: #af9191;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a.facebook:hover::after {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+}
+
+footer ul li a.linked:hover::after {
+  content: "\f0e1";
+  font-family: "Font Awesome 5 Brands";
+}
+
+footer ul li a.youtube:hover::after {
+  content: "\f167";
+  font-family: "Font Awesome 5 Brands";
+}
+
+.sub-footer {
+  padding: 20px 0;
+  background-color: #cccc;
+  line-height: 1.5;
+}
+
+.sub-footer ul li {
+  display: inline-block;
+}
+/* end footer style*/
+
+/* start internal framework  style */
+.title {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+}
+
+.title::after {
+  width: 120%;
+  height: 2px;
+  background-color: #4a5a7a;
+  content: "";
+  top: 55px;
+  left: -25px;
+  position: absolute;
+}
+
+.scrolled {
+  background-color: rgba(204, 204, 204, 0.9);
+}
+/* start internal framework  style */
+
+/* start media query style*/
+
+/* Start extra small devices (portrait phones, less than 576pc) */
+@media (min-width: 491px) and (max-width: 575.98px) {
+  .main-holder-video .video-wrap video {
+    display: none;
+  }
+
+  .main-holder-video .video-wrap {
+    background-image: url("../images_videos/MFY-flag1.1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .main-holder-video span {
+    display: none;
+  }
+
+  .about-section .tab-content {
+    width: 100%;
+  }
+
+  .contact .socail {
+    padding-right: 15px;
+  }
+}
+/* End extra small devices (portrait phones, less than 576pc) */
+
+/* start small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .main-holder-video .video-wrap video {
+    display: none;
+  }
+
+  .main-holder-video .video-wrap {
+    background-image: url("../images_videos/MFY-flag1.1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .main-holder-video span {
+    display: none;
+  }
+
+  .about-section .tab-content {
+    width: 100%;
+  }
+
+  .contact .socail {
+    padding-right: 15px;
+  }
+}
+/* End small devices (landscape phones, 576px and up) */
+
+/* start medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-section .tab-content {
+    width: 100%;
+  }
+}
+/* end medium devices (tablets, 768px and up) */
+
+/*end media query style*/
+
+/* start hover style*/
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #031242;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover,
+.hvr-sweep-to-bottom:focus,
+.hvr-sweep-to-bottom:active {
+  color: white;
+}
+.hvr-sweep-to-bottom:hover:before,
+.hvr-sweep-to-bottom:focus:before,
+.hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+/* Sweep To Left */
+.hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #091746;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-left:hover,
+.hvr-sweep-to-left:focus,
+.hvr-sweep-to-left:active {
+  color: white;
+}
+.hvr-sweep-to-left:hover:before,
+.hvr-sweep-to-left:focus:before,
+.hvr-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* end hover style*/
